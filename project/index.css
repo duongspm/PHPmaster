@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.login{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 0 8rem;
+}
+.login__form{
+    padding-bottom: 4rem;
+}
+.login__right{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 5rem 5rem;
+}
+.login__logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.login__left{
+    align-items: center;
+    justify-content: center;
+}
+.logo__right__heading{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+.login__form__title{
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+.login__pass{
+    margin-top: 1rem;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: large;
+}
+.button__submit{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+}
+.forgot{
+    color: gray;
+    text-align: center;
+    font-size: larger;
+}
+.login__right__button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login__right__button__title{
+    font-size: larger;
+   
+}
+.login__right__button__button{
+    border: solid 2px red;
+    padding: 15px 32px;
+    background-color: white;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+    transition: 0.2s;
+    
+}
+.login__left{
+    background: linear-gradient(
+                          to right,
+                          #ee7724,
+                          #d8363a,
+                          #dd3675,
+                          #b44593);
+                          display: flex;
+                          flex-wrap: wrap;
+                          align-content: center;
+    padding: 10rem 10rem;
+    color: white;
+}
+.login__left__heading{
+    padding-bottom: 1rem;
+}
+
+.login__right__button__button:hover{
+    background: linear-gradient(
+                          to right,
+                          #ee7724,
+                          #d8363a,
+                          #dd3675,
+                          #b44593);
+                          color: white;
+}

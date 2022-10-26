@@ -1,3 +1,7 @@
+<?php
+include '../project/configuration/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,16 +9,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="/dist/output.css" rel="stylesheet">
+  <title>Project</title>
+  <!-- <link href="/dist/output.css" rel="stylesheet">
   <link href="../project/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link href="../src/output.css" rel="stylesheet">
+  <link href="../src/output.css" rel="stylesheet"> -->
+  <link href="./index.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <section class="h-full gradient-form bg-gray-200 md:h-screen">
+  <!-- dung require bat buoc phai co -->
+
+  <!-- <section class="h-full gradient-form bg-gray-200 md:h-screen">
     <div class="container py-12 px-6 h-full">
       <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
         <div class="xl:w-10/12">
@@ -75,7 +82,56 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <div class="login">
+    <div class="login__right">
+      <div class="login__logo">
+        <img src="./images/crown.png" alt="">
+        <h2 class="logo__right__heading">We are The Lotus Team</h2>
+      </div>
+      <div class="login__form">
+        <p class="login__form__title">
+          Please login to your account
+        </p>
+        <form>
+          <div class="form__login">
+            <div class="login__user">
+              <input type="text" id="fname" name="firstname" placeholder="Username">
+            </div>
+            <div class="login__pass">
+              <input name="pass" placeholder="Password" type="text">
+            </div>
+          </div>
+          <div >
+            <button class="button__submit" type="submit" style="
+                        background: linear-gradient(
+                          to right,
+                          #ee7724,
+                          #d8363a,
+                          #dd3675,
+                          #b44593
+                        );">LOG IN</button>
+          </div>
+          <p class="forgot">Forgot password?</p>
+        </form>
+      </div>
+      <div class="login__right__button">
+          <div>
+            <p class="login__right__button__title">Don't have an account?</p>
+          </div>
+          <button class="login__right__button__button">DANCER</button>
+      </div>
+    </div>
+    <div class="login__left">
+      <div class="login__left__heading">
+        <h2>We are more than just a company</h2>
+      </div>
+      <div class="login__left__desc">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut doloribus vero unde libero sed dolorem, in sit labore. Distinctio omnis rerum deserunt obcaecati! Animi debitis repellendus quae nulla explicabo commodi.</p>
+      </div>
+    </div>
+  </div>
+  <!-- <?php include './components/footer.php'; ?> -->
 </body>
 
 </html>
